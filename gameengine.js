@@ -217,6 +217,8 @@ Entity.prototype.draw = function (ctx) {
 			
 		}else if(this.game.entities[1].isTimeOut){
 			this.game.gameTimer = 0;
+			console.log(this.game.entities[1].isTimeOut);
+			console.log(this.game.entities[0].isTimeOut);
 		}
 	}
 	
