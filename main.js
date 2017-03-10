@@ -209,6 +209,7 @@ Player.prototype.update = function () {
 		if (entities_list[i].hp === 0 || entities_list[i].idle) {
 			backgroundMusic.pause();
 			isGameOver = true;
+			this.isTimeOut = true;
 			break;
 		}
 	}
