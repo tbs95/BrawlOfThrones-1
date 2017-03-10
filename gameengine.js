@@ -215,6 +215,8 @@ Entity.prototype.draw = function (ctx) {
 				this.game.ctx.fillText(this.game.entities[1].name + " has won", this.game.surfaceWidth/2-30-230, 350);
 			}
 			
+		}else if(this.game.entities[0].isTimeOut){
+			this.game.gameTimer = 0;
 		}
 	}
 	
