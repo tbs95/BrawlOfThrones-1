@@ -162,6 +162,7 @@ Entity.prototype.draw = function (ctx) {
 	}
 	if(this.game.entities[0].hp>0){
 	//Health bar Player one on the left
+		this.game.ctx.fillStyle="#00FF00";
 	this.game.ctx.fillRect(850,0,(this.game.entities[0].hp/100)*140,25);
 	}
 	
